@@ -369,7 +369,7 @@ else:  # GSTR-3B
     st.title("📄 GSTR-3B PDF Extractor")
     st.write("Upload GSTR-3B PDFs")
     
-    uploaded_files = st.file_uploader("Upload GSTR-3B PDFs", type="pdf", accept_multiple_files=True)
+    uploaded_files = st.file_uploader("Upload PDFs", type="pdf", accept_multiple_files=True)
     
     if uploaded_files:
         all_general_details = []
