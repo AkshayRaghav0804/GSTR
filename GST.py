@@ -313,7 +313,7 @@ def create_combined_gstr3b_sheet(general_df, table_3_1_df, table_4_df, table_6_1
 # Main Application Logic
 if gst_type == "GSTR-1":
     st.title("📄 GSTR-1 PDF Extractor")
-    st.write("Upload GSTR-1 PDFs to extract GST details and Total Liability")
+    st.write("Upload GSTR-1 PDFs")
     
     uploaded_files = st.file_uploader("Upload PDFs", type=["pdf"], accept_multiple_files=True)
     
@@ -366,7 +366,8 @@ if gst_type == "GSTR-1":
             st.download_button("Download Extracted Data as Excel", f, file_name="GSTR1_Extracted.xlsx")
 
 else:  # GSTR-3B
-    st.title("GSTR-3B PDF Extractor")
+    st.title("📄 GSTR-3B PDF Extractor")
+    st.write("Upload GSTR-3B PDFs")
     
     uploaded_files = st.file_uploader("Upload GSTR-3B PDFs", type="pdf", accept_multiple_files=True)
     
