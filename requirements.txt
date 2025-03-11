@@ -3,3 +3,4 @@ pandas
 pdfplumber
 PyPDF2
 PyMuPDF
+openpyxl
