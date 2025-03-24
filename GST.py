@@ -15,7 +15,7 @@ ASSETS_DIR = Path("assets")
 ASSETS_DIR.mkdir(exist_ok=True)
  
 # Add logo to the sidebar
-logo_path = ASSETS_DIR / "kkc logo 1.png"
+logo_path = ASSETS_DIR / "kkc logo.png"
 if logo_path.exists():
     st.sidebar.image(str(logo_path), width=275)
 else:
